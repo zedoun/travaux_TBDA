@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta name="description" content="description de mon site" />
+    <title>JAVASCRIPT</title>
+    <link rel="icon" herf="logo_afpa.ico" />
+
+</head>
+
+<body>
+    <label for="input"> Entrez des nombres (0 pour arrêter):</label>
+    <input type="text" id="input">
+    <button onclick="calculate()">calculer></button>
+    <br><br>
+    <div id="result"></div>
+
+
+    <script src="javascript3.js"></script>
+    <script>
+        function calculate() {
+            let input = document.getElementById("input").value;
+            let number = [];
+            let sum = 0;
+            let average = 0;
+            while (input != 0) {
+                numbre.push(Number(input));
+                input = prompt("entrez un autre nomber (0 pour arrêter)");
+            }
+            for (let i = 0; i < number.length; i++) {
+                sum = number[i];
+            }
+            if (number.length > 0) {
+                aver = sum / number.length;
+            }
+            document.getElementById("result").innerHTML = "somme : " + sum + "<br> moyenne:" + aver;
+        }  
+    </script>
+</body>
+
+</html>

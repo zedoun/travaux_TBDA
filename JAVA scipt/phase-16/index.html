@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta name="description" content="description de mon site" />
+    <title>formulaire de contact</title>
+    <link rel="icon" herf="logo_afpa.ico" />
+
+</head>
+<body>
+    <h1>Vos coordonnées</h1>
+    <h2>Ces zones sont obligatoires pour envoyer le formulaire</h2>
+    <form action="traitement.php" methed="post" onsubmit="">
+        <p>
+            <label for="societe"><b> Société :</b></label>
+            <input type="text" id="societe" name="societe" required minlength="1">
+        </p>
+
+        <p>
+            <label for="personne">Personne à contacter :</label>
+            <input type="text" id="personne" name="personne" required minlength="1">
+        </p>
+
+        <p>
+            <label for="adresse">Adresse de l'entreprise :</label>
+            <textarea name="adresse" id="adresse" cols="40" row="3" placeholder="Entrez votre adresse"></textarea>
+        </p>
+
+        <p>
+            <label for="codepostal">code postal :</label>
+            <input type="text" id="codepostal" name="codepostal" required pattern="[0-9]{5}">
+        </p>
+
+        <p>
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" required minlength="1">
+        </p>
+
+
+        <p>
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="tel">Téléphone :</label>
+            <input type="text" id="tel" name="tel">
+        </p>
+
+        <p>
+
+            <label for="environnement">environnement technique :</label>
+            <select name="environnement" id="environnement">
+                <option value="choisissez" selected>choisissez</option>
+                <option value="access">Access</option>
+                <OPtion value="Java">java</OPtion>
+                <option value="delphi">Delphi</option>
+                <option value="choisissez" selected>choisissez</option>
+                <option value="windev">windev</option>
+                <OPtion value="visuel Basic">visuel Basic</OPtion>
+                <option value="powerBuilder">Delphi</option>
+                <option value="internet" selected>internet</option>
+                <option value="windows NT">windows NT</option>
+                <OPtion value="Unix">Unix</OPtion>
+                <option value="SQL server">SQL server</option>
+                <OPtion value="oracle">oracle</OPtion>
+                <option value="">....Autre....</option>
+            </select>
+            <br>
+            <textarea name="environnement-texte" id="environnement-texte" cols="50" rows="4"
+                placeholder="précisez votre projet"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Envoyer">
+
+            <input type="reset" value="Effacer">
+        </p>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

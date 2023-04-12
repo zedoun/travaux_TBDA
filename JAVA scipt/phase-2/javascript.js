@@ -22,3 +22,4 @@ console.log(typeof true); affiche "boolean"
 
 var myvar;
 console.log(typeof myvar); // affiche 'undefined'
+document.write("<h1>c'est la france</h1>")

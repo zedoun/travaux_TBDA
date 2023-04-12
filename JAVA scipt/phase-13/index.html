@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta name="description" content="description de mon site" />
+    <title>JAVASCRIPT</title>
+    <link rel="icon" herf="logo_afpa.ico" />
+   
+</head>
+<body>
+<img src="papillon.jpg" border="10" width="660" height="400" alt="zerooo"
+onmouseover="this.src='logo_windows.jpg'"
+onmouseout="this.src='papillon.jpg'">
+    <a href="#"onMOUSEOver="message();"> message  trés trés mportant  :</a>
+    <p  onclick="alert('ok')">Clique ici</p>
+    <p  id="button5">Clique moi</p>
+    <script>
+   
+function message(){
+    alert("coucou les gars");
+}
+var element = Document.getElementById("button5");
+element.addEventListener("click",function()
+{
+    alert("ok");
+});
+
+   </script> 
+</body>
+
+</html>
